@@ -1,0 +1,69 @@
+
+Software Development Life Cycle:
+
+	- Requirement Gathering
+	- Analysis and Planning
+	- Design
+	- Coding
+	- Testing
+	- Deployment
+	- Maintanance
+	
+Agile Process: Agile is a process where developers and testers work together as a team i.e. known as Agile Team.
+
+	Agile Team: Developers + Testers + Product Managers
+	
+Waterfal Model:
+
+	1 -> 2 -> -> 3 -> 4 -> 5 -> 6 -> 7
+	
+Agile is a software development process or model where all entites work together to achieve the deliverables that go parallelly in collaboration.
+
+Most of the time, documentation is avoided in agile process.
+Instead of documentation, we need Epics and Stories in Agile Process.
+
+	Epic: A large and High level requirement.
+
+	Features: We have to derived the Epic into small pieces i.e. Features.
+
+	Story: Features furhther divided into stories.
+
+--------------------------------------------------------------------------
+
+Product Ownner: responsible fo creating epics, features and stories based upon the requirements gathered from stakeholders.
+
+Business Analyst: In waterfall or other models, BA plays an important role to intract with stakeholders and gathers the requirement.
+
+--------------------------------------------------------------------------
+
+Roles in Agile:
+
+	1. Product Owner: responsible for getting requirements from stakeholders.
+	2. Scrum Master: fascillitator for an entire agile development teams.
+	3. Scrum Team: developers + testers who work together to achieve a goal fo product.
+	
+	SM is not a developer/QA/PO/Manager.
+	SM is a intermediator between the agile development team.
+
+--------------------------------------------------------------------------
+
+	Sprint: A duration that needs to complete a set of stories.
+	
+---------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+
+Java Fundamentals:
+
+Java Variables: 
+
+	A variable is a location in memory to hold the data.
+	To indicate the memory, each variable should have a unique name(identifier) given.
+	
+Creating Java Variables:
+
+	data-type variable-name;
+	
+	int age;		// Declaring a variable (Declaration)
+	age = 23;		// Assigning a value  	(Assignment)
+	int age = 23;	// Initializing a value (Initialization)
+	
+--------------------------------------------------------------	
+	
+Java Data Types:
+
+--------------------------------------------------------------
+
+User Input: (Scanner Class)
+
+	Scanner class is the part of java.util built-in package.
+	This class helps in reading user input from different sources.
+	Such as Input Streams, files and Users etc.
+
+--------------------------------------------------------------
+	
+Java Operators: 
+
+	Operators are symbols that are used to perform operations on variables.
+	They helps in calculation, comparison and evaluation.
+	Each operator performs specific operation.
+	
+Types of Operators:
+
+	1. Arithmetic Operators
+		(+, -, *, /, %)
+	2. Assignment Operators (Arithmetic Assignment Operators/Compound Operators)
+		(=, +=, -=. *=, /=, %=)
+	3. Comparison Operators (Relational Operators)
+	4. Logical Operators
+		(AND &&, OR ||, NOT !)
+		
+	5. Unary Operators
+	6. Shift Operators
+	7. Bitwise Operators
+	8. Ternary Operators
+	
+Cateogories of operations:
+
+	Binary Operations: Minimum two operands and one operator are required. E.g. num1 + num2
+	Unary Operations: Minimum one operand and one operation are required. E.g. num1++
+	
+--------------------------------------------------------------
+
+	

@@ -1,0 +1,181 @@
+
+Windows Operating System
+
+Software Requirements:
+
+	- git (scm)
+	- github (account)
+	- Notepad++
+	- Visual Studio Code
+	- Java JDK
+	- IDE:	Netbeans/Eclipse/IntelliJ
+	- Eclipse (Suggestion)
+	- Database (MySQL)
+	- NodeJS and NPM 
+	
+----------------------------------------------
+
+git !== github
+
+git: Version Control System
+
+github: Hosting Service Provider to host and manage the repositories at server side.
+
+Version Control System: A software strategy that tracks the changes to a file or set of files in which a team is working.
+
+-------------------------------------------------------
+
+Git Configuration Setup:
+
+	git config --global user.name "anshuldhuryani"
+	
+	git config --global user.email "anshul.dhuryani@gmail.com"
+	
+	git config --list
+	
+--------------------------------------------------------
+
+Basic Git Commands:
+
+	-- Initialize a local directory as git repository: (First Time)
+
+		git init
+	
+	-- To see the status of tracked/untracked changes:
+	
+		git status
+		
+	-- To track any untracked files/folders from repository:
+	
+		git add .
+		
+	-- To see again the status of tracked/untracked changes:
+
+		git status
+		
+	-- To commit all the tracked file and folder to local repositories:
+	
+		git commit -m "First Commit"
+		
+	-- To add the remote origin to update the server repository location: (First Time)
+	
+		git remote add origin https://github.com/anshuldhuryani/test-project.git
+		
+	-- To push all the pending commits to Hosting Service provider(Github):
+	
+		git push -u origin master
+
+-----------------------------------------------------------------------
+
+About git add:
+
+	Helps us to add the content to the staging area.
+	
+	-- Adds more than one files or folder which are pending for stagging.
+	
+		git add .
+		
+		or 
+		
+		git add -A
+		
+	-- Adds the modified or deleted files to staging area
+	
+		git add -u
+		
+	-- Add specific file or folder
+	
+		git add file-name
+		git add folder-name
+		
+	-- Add Files by Wild Card
+	
+		git add *.java
+		
+	- To reset the add operation:
+	
+		git reset .
+		
+-----------------------------------------------------------------------
+
+To check the commit logs:
+
+	git log
+
+About Git Commit:
+
+	git revert <commit-id>
+
+-----------------------------------------------------------------------
+	
+	-- To check the list of branches:
+	
+		git branch
+	
+	-- To create branch
+	
+		git branch branch-name
+		git branch MyFirstBranch
+	
+	-- Checkout to a new branch:
+	
+		git checkout MyFirstBranch
+		
+	-- Add Files to Branch and Commit
+	
+		git status
+		
+		git add .
+		
+		git commit -m "First Commit to MyFirstBranch"
+		
+		git push -u origin MyFirstBranch
+		
+--------------------------------------------------------------
+
+		git checkout master
+		-
+		git merge MyFirstBranch
+		
+		git push -u origin master
+		
+--------------------------------------------------------------
+		
+	-- To delete branch from Local Repository:
+	
+		git branch -d MyFirstBranch
+	
+	-- To delete branch from Remote Repository:
+	
+		git push origin --delete MyFirstBranch
+	
+--------------------------------------------------------------
+		
+	-- To clone a repository from github
+	
+		git clone https://github.com/anshuldhuryani/demo-project.git
+		
+	-- To pull changes after clonning:
+	
+		git pull
+		
+---------------------------------------------------------------
+
+	-- Default Pull Command, pull from master
+
+	git pull
+	
+	
+	-- Pull specific branch from remote repository
+	
+		git pull <branch-url>
+	
+	-- This command forcefully recreate all files/folders in local rempository:
+	
+		git fetch -all
+		
+-------------------------------------------------------------
+		
+		
+		
+	
