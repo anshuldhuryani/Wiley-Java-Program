@@ -41,13 +41,22 @@ Types of Operators:
 	2. Assignment Operators (Arithmetic Assignment Operators/Compound Operators)
 		(=, +=, -=. *=, /=, %=)
 	3. Comparison Operators (Relational Operators)
+		(==, != >, <, >=, <=)
 	4. Logical Operators
 		(AND &&, OR ||, NOT !)
-		
 	5. Unary Operators
-	6. Shift Operators
-	7. Bitwise Operators
-	8. Ternary Operators
+		(++, --)
+	6. Ternary Operators (Conditional Opeator)
+		condition ? (True-Expression):(False-Expression)
+	7. Shift Operators
+		Left Shift (<<)
+		Signed Right Shift (>>)
+		Unsigned Right Shift ()
+	8. Bitwise Operators
+		Bitwise OR (|)
+		Bitwise AND	(&)
+		Bitwise XOR	(^)
+		Bitwise Complement (~)
 	
 Cateogories of operations:
 
@@ -56,4 +65,66 @@ Cateogories of operations:
 	
 --------------------------------------------------------------
 
+Conditional Constructs
+
+	1. Simple If Statement
+	2. If..else Statement
+	3. if..else if..else Statement
+	4. Nested if..else statement
+	5. Switch Statement
+
+Non-Conditional Constructs
+
+	1. break Statement
+	2. continue Statement
+
+Looping Constructs
+
+	1. for Loop
+	2. while Loop
+	3. do..while Loop
+	4. foreach Loop (Enhanced Loop)
+	
+Categories of Loop:
+	1. Fixed Loop 
+	2. Variable Loop
+	
+	
+For Loop Syntax:
+
+	for(initialization;condition;inc/dec) {
+		// Loop Body
+	}
+	
+While Loop Syntax:
+
+	initialization;
+	while(condition) {
+	....
+	....
+	inc/dec;
+	}
+	
+do..while Loop Syntax:
+
+	initialization;
+	do {
+	...
+	...
+	inc/dec;
+	} while(condition);
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
