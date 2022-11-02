@@ -1,0 +1,57 @@
+
+There are some errors being raised by compiler or interpreter at compile-time and run-time depending upon the coding approach a developer follows.
+
+There are types of errors:
+
+	- Compile-Time Errors: 
+	
+	caught by compiler while writting a program. They occur when we do syntactical mistakes, or mis-spell any keywords. They are also considered as:
+		- Syntactical Errors
+			- Missing Semicolon
+			- Mis-spelled Keywords and so on.
+		- Sementic Errors (Expressional Errors)
+			- When we writting incorrect expressions.
+			e.g.
+				num3 = num1 + num2; (Correct)
+				num1 + num2 = num3; (Incorrect)
+				
+				num2 += num1; (Correct)
+				num2 =+ num1; (Incorrect)
+	Note: Programmers needs to handle or resolve the complile-time error by them selves.	
+
+	- Run-TIme Errors:
+		These errors gets occurs due to incorrect input or invalid inputs.
+		They are occurred at execution time. Thus,
+		They are also known as Exception. 
+		They can be resolved with the help of exception handling.
+		The program gets abnormally terminated due to exceptions.
+		
+	- Logical Errors:
+		These errors gets occur when we don't get an expected output.
+		These are the errors raised by developers.
+		They are due to inappropriate logics.
+		E.g. Expecting 10 as even number but result is odd.
+		int num = 10;
+		if(num/2 == 0) 
+			System.out.println("Number is even.");
+		else 
+			System.out.println("Number is odd.");
+
+----------------------------------------------------------------------------
+
+File Handling:
+
+	File Handling helps in storing the data into the file system.
+	Java offers a list of classes and methods to work with file system.
+	All the classes are available within java.io package.
+	
+	Working with File Handing is to work with streams.
+	Stream is group of data or characters that travels from source to destination and vice versa.
+	
+	Streams in Java:
+		Byte Stream (Input Stream Class, Output Stream Class)
+		Character stream (Reader Classes, Write Classes)
+		
+----------------------------------------------------------------------------
+
+	

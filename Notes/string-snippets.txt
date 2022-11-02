@@ -1,0 +1,26 @@
+
+	// Demonstration 1:
+	StringTokenizer message = new StringTokenizer("Learning Java Fundamentals", " ");
+	while(message.hasMoreTokens()) {
+		System.out.println(message.nextToken());
+	}
+	
+------------------------------------------
+
+	// Demonstration 2:
+	StringTokenizer message = new StringTokenizer("Learning,Java,Fundamentals");
+	System.out.println(message.nextToken(","));
+	
+--------------------------------------------
+
+		// Demonstration 3:
+		StringTokenizer message = new StringTokenizer("Learning, Java, Fundamentals", ",", true);
+		while (message.hasMoreTokens()) {
+			System.out.println(message.nextToken().trim());
+		}
+		
+---------------------------------------------
+
+		// Demonstration 3:
+		StringTokenizer message = new StringTokenizer("Learning, Java, Fundamentals", ",", true);
+		System.out.println("Number of Tokens: " + message.countTokens());

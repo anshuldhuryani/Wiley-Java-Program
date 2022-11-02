@@ -1,0 +1,32 @@
+
+	String is immutable in Java.
+	
+	- When we declare a String using double quotes, such as,
+	
+	// Declaring String as Variable
+	String str1 = "abc";
+	
+	JVM first looks for the String with the same value in a string pool.
+	If found, it returns the reference of the string object rom the pool.
+	Otherwise, it creates the String object in the String pool and returns the reference. Thus, JVM saves the memory by using the same String in different threads.
+	
+	- When we declare or create a String using new operator,
+	// Declaring String as Object
+	String str2 = new String("abc");
+	It creates String in heap memory.
+	
+-------------------------------------------------------------------
+
+	String class overrides two methods:
+		- equals() Method
+			- equals() method checks for case-sensitive strings.
+			- checks if two strings have save character sequence.
+			- String uses UTF-16 (Unicode) thus,each character contains 2 bytes.
+		- hashCode() Method
+
+	Note: Use equalsIgnoreCase() if you are looking for case insensitive checks.
+
+	As String is immutable, whenever we do any String manipulation, it generates new String and discards the older one for GC. 
+	Thus, it generates a lot of garbage in heap.
+	
+	SO, we prefer to use StringBuilder and StringBuffer for doing String manipulation because these classes are mutable. These classes provide methods like append(), insert(), delete() and so on.

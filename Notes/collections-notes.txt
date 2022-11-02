@@ -1,0 +1,28 @@
+
+Collections and Generics:
+---------------------------
+
+Collections:
+ A framework in Java that provides different interfaces and classes to store and manipulate objects.
+ 
+ Collection (Interface):
+	- Set (Interface)
+		- SortedList (Interface)
+			- TreeSet (Class)
+		- HashSet, LinkedHashSet (Classes)
+	- List (Interface)
+		ArrayList, LinkedList and Vector (Classes)
+	- Queue (Interface)
+		LinkedList and PriorityQueue (Classes)
+	- Map (Interface)
+		- sortedMap (Interface)
+			- TreeMap (Class)
+		- HashTable, LinkedHashMap and HashMap (Classes)
+		
+Objects in Collections: Arrays, Collections
+
+Arrays: 
+	- A utility class that contains various static methods that we can use to perform operations such as find, sort, search and so on.
+
+Collections
+	- A utility class that provides methods for useful operations for handling large data.

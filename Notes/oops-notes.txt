@@ -1,0 +1,187 @@
+
+Procedural Oriented Programming:
+
+Object Oriented Programming:
+
+	The key feature of OOPS is Data Security.
+	
+Other Features are:
+
+	Binding a data into template.
+	Reusibiliy of Code.
+	Reducing the space complexity.
+	Encapulate the protected data.
+	Reducing the time and efforts of programmer.
+	Increase the readability of the program.
+
+Components of OOPS:
+
+	1. Class
+	2. Object
+	3. Encapsulation
+	4. Abstraction
+	5. Inheritance
+	6. Polymorphism
+	
+------------------------------------------------
+
+Class:
+
+	- A user-defined data type or blueprint.
+	- A class is a collection of data members and member functions.
+	- Where, data members are the variables declared inside a class.
+	- and Member functions are the methods defined inside a class.
+	
+	int number;
+	Student student;
+	
+Object:
+
+	- A representator or a part of a class.
+	- Helps in accessing the members of a class.
+	- WHen an object of a class is created, memory gets allocated to all the data members of a class but member functions gets the memory when they are invoked.
+	
+Constructor:
+
+	- A special methods that helps in initalizing the data members of a class. If we don't have a constructor in a class then all the data members gets initialized by their data values with respect to their types by a constructor of an object class.
+	- But if you have any constructor in your own class, object class constructor doesn't invoke.
+	- the name of the constructor is same as that of the class.
+	- Thye don't have return type.
+	- We don't use these methods for input, output or operations.
+	- Constructors are invoked implicitely.
+	
+	Types of Constructors:
+		1. Default Constructor (Parameterless Constructor)
+		2. Parameterized Constructor
+		3. Private Constructor
+		4. Copy Constructor
+		5. Static Constructor or Static Block
+		
+	Note: Constructor Chaining
+	
+---------------------------------------------------------
+
+Instance Data Members (Instance Variables)
+	
+	int studentId;
+
+Class Data Members (Class Variables)
+
+	static String universityName;
+
+--------------------------------------------------
+
+In java, a constructor is not allowed to be abstract, final, static and native. So, there is no static constructor in Java.
+
+Static block execute only once. 
+We can use static block in Java to initialize the static members.
+Static keyword is associated with class, static block gets executed before the constructors.
+
+When we create an object of a class, before allocating memory to the instance data members, first memory gets allocated to the class member only once for entire execution.
+
+---------------------------------------
+
+Define a class student with the following specification
+
+Private members of class student
+admno                       integer
+sname                       String
+eng. math, science       	float
+total                       float
+ctotal(): a function to calculate eng + math + science with float return type.
+
+Public member function of class student
+Takedata(): Function to accept values for admno, sname, eng, science and invoke ctotal() to calculate total.
+Showdata(): Function to display all the data members on the screen.
+
+Additionally,
+	Add two static fields, course name and collage Name and initalize using static block.
+	Create an array of 5 students objects and iterate through.
+
+------------------------------------------------------------------------
+
+Inheritance:
+
+	- Helps in reusability of code.
+	- Helps in reducing time and efforts of a program.
+	- Helps in inheriting the attributes and behaviours of parent class into child class.
+	- A class can extends only one class at a time.
+	- When we create an object of child class, memory gets allocated to all the data members of parent and child class. And allows us to access protected and public members.
+	- Parent Class: Base Class/Super Class
+	- Child Class: Dervied Class/Sub Class
+	
+Types of Inheritance:
+
+	- Single Inheritance
+	- Multi-Level Inheritance
+	- Hierchical Inheritance
+	
+-- These below mentioned types of inheritance can be achieved using interfaces.	
+	
+	- Multiple Inheritance
+	- Hybrid Inheritance
+	
+--------------------------------------------------------------------------
+
+Encapsulation: Hiding data. A class is by default encapsulated.
+				Use, private to encapsulate the data.
+
+Abstraction: Abstract the relvant data which is in use.
+				Use, public and protected to access data as per the use.
+
+--------------------------------------------------------------------------------
+Assessment:
+
+Part 1:
+Create a super class called Car. The Car class has the following fields and methods.
+◦int speed;
+◦double regularPrice;
+◦String color;
+◦double getSalePrice();
+
+Part 2:
+Create a sub class of Car class and name it as Truck. The Truck class has the following fields and methods.
+◦int weight;
+◦double getSalePrice();//If weight>2000,10%discount.Otherwise,20%discount.
+
+Part 3:
+Create a subclass of Car class and name it as Ford. The Ford class has the following fields and methods
+◦int year;
+◦int manufacturerDiscount;
+◦double getSalePrice();//From the sale price computed from Car class,subtract the manufacturerDiscount.
+
+Part 4:
+Create a subclass of Car class and name it as Sedan. The Sedan class has the following fields and methods.
+◦int length;
+◦double getSalePrice();//If length > 20feet,5% discount,Otherwise,10% discount.
+
+Create an instance of Car class and initialize all the fields with appropriate values.
+Display the sale prices of all instance.
+
+Main
+Create MyOwnAutoShop class which contains the main() method. Perform the following within the main()
+method.
+◦Create an instance of Sedan class and initialize all the fields with appropriate values. Use super(...) method in
+the constructor for initializing the fields of the superclass.
+◦Create two instances of the Ford class and initialize all the fields with appropriate values. Use super(...)
+method in the constructor for initializing the fields of the super class.
+www.oumstudents.tk
+◦Create an instance of Car class and initialize all the fields with appropriate values.
+Display the sale prices of all instance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

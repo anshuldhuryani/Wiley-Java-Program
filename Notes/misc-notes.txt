@@ -1,0 +1,181 @@
+
+
+Part 1:
+Create a super class called Car. 
+The Car class has the following fields and methods.
+◦int speed;
+◦double regularPrice;
+◦String color;
+◦double getSalePrice();
+
+Part 2:
+Create a sub class of Car class and name it as Truck. 
+The Truck class has the following fields and methods.
+◦int weight;
+◦double getSalePrice();//If weight>2000,10%discount.Otherwise,20%discount.
+
+Part 3:
+Create a subclass of Car class and name it as Ford. 
+The Ford class has the following fields and methods
+◦int year;
+◦int manufacturerDiscount;
+◦double getSalePrice();//From the sale price computed from Car class,subtract the manufacturerDiscount.
+
+Part 4:
+Create a subclass of Car class and name it as Sedan. 
+The Sedan class has the following fields and methods.
+◦int length;
+◦double getSalePrice();//If length > 20feet,5% discount,Otherwise,10% discount.
+
+Create an instance of Car class and initialize all the fields with appropriate values.
+Display the sale prices of all instance.
+
+Main
+Create MyOwnAutoShop class which contains the main() method. 
+Perform the following within the main() method.
+◦Create an instance of Sedan class and initialize all the fields with appropriate values. 
+Use super(...) method in the constructor for initializing the fields of the superclass.
+◦Create two instances of the Ford class and initialize all the fields with appropriate values. 
+Use super(...) method in the constructor for initializing the fields of the super class.
+◦Create an instance of Car class and initialize all the fields with appropriate values.
+Display the sale prices of all instance.
+
+-----------------------------------------------------------------------------------
+
+Polymorphism:
+
+	`Poly` means many and `morpho` means forms.
+	
+	"One Interface Multiple Functions"
+	
+	Polymorphism can be achieve by two ways:
+	
+	1. Static Polymorphism (Early-Binding)
+	
+		- Overloading (Method and Constructor Overloading)
+		
+		If a class has multipe methods having same name but different parameters, it is known as Method Overloading.
+		
+		If a class has multipe constructors having same name but different parameters, it is known as Constructor Overloading.
+		
+		There are ways to use function parameters or function signatures:
+			1. Number of Parameters
+			2. Type of Parameters
+			3. Sequence of Parameters
+		
+	2. Dynamic Polymorphism (Late-Binding)
+	
+		- Overridding (Abstract Classes and Interfaces)
+		
+		If a child class has method with same name, same signature and same or above access specifier to re-write the function definition, it is known as method overriding.
+		
+-----------------------------------------------------------------------
+
+	Abstract Class:
+	
+		A class in which abstract methods are defined, needs to declare abstract class.
+		We use abstract keyword to make any class as abstract class.
+		An abstract class can consist abstrct and non-abstract methods.
+		An abstract class can't be instantiated.
+		An abstract can also have constructors, default and static methods.
+		An abstract can also have final variables and methods too.
+	
+	Abstract Method:
+	
+		A method which is declared as abstract and doesn't have implementation is known as abstract method. An abstract method gets overriden into sub-classes or child-classes forcefully.
+		
+		
+Define an abstract deposit class extending Account class with following properties:
+amount, maturity date and opening date.
+(Use constructor to intialize the values)
+
+Define ShortTerm class extending the deposit class with folloing property:
+no of months.
+(Use constructor to intialize the values)
+Override display methods to print all account details we have received till now. 
+
+Define LongTerm class extending the deposit class with following property:
+no of years.
+(Use constructor to intialize the values)
+Override display methods to print all account details we have received till now. 
+
+
+Main:
+Instantiate SavingAccount and display details
+Instantiate ShortTerm and display details
+Instantiate LongTerm and display details
+
+--------------------------------------------------------------
+
+Interfaces: 
+
+	- An interfaces are contract.
+	- A blueprint of a class that can have static, default abstract methods.
+	- There can be only abstract methods in interfaces.
+	- By default all the methods of an interface are abstract and public.
+	- Java 8 onwards, we can have default and static in an interface.
+	- Java 9 onwards, we can also have private methods in an interface.
+	- A class extends another class but a class implements another interface.
+	- Multiple inheritance can be achieved with the help of interface. 
+	- Thus, a class can implements more than interface also.
+	- An interface can't be instantiated.
+
+	
+--------------------------------------------------------------
+
+Getters and setters:
+
+	- Getter and Setters are special methods.
+	- They helps in reading and writing the data members or object properties.
+	- The getter to read value to a variable.
+	- The setter is write value to a variable.
+	- They helps reading and writing the private fields of a class.
+	- They helps in making the property,
+		read-only, write-only, read-write both
+	- They also helps in checking different constraints or conditions.
+	
+---------------------------------------------------------------
+
+Data Types in Java:
+	- Primitive Data Types
+		Integers: byte, short, int, long
+		Floating-Point: float, double
+		Character: char
+		Boolean: boolean
+		
+	- Non-Primitive Data Types
+		String
+		Array
+		List
+		Stack
+		Vector
+		Dictionary
+		All User-Defined Class
+		etc.
+
+Wrapper Classes in Java:
+
+	- Generic classes work with object and don't with primitve.
+	- Also, wrapper classes are needed to convert primitive data type into non-primitive data type(objects).
+	- In Java, wrappers classes are provided by java.lang.
+	
+	char	Character
+	byte	Byte
+	short	Short
+	int		Integer
+	long	Long
+	float	Float
+	double	Double
+	boolean	Boolean
+	
+	// Invalid
+	List<int> numbers = new ArrayList<int>();
+
+	List<Integer> names = new ArrayList<Integer>();
+	List<String> names = new ArrayList<String>();
+	
+	Integer integer = new Integer(100);
+	Character char = new Character(1234);	// Compile-Time Error
+
+
+	
