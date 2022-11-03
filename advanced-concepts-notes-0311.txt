@@ -1,0 +1,76 @@
+
+
+What is Clonning?
+
+	- Clonning is a process for creating an exact copy of existing object in the memory.
+	- In Java, Clone() method being used from java.lang.Object class for clonning.
+	- The object in which we implement Clonable interface is eligible for clonning process.
+	- This clone() method copies the object in which field-by-field assignment happens and - returns the reference of the copied object.
+	- By default clone() method creates a shallow copy of an object.
+	- To implement deep compy of an object, we need to override clone() method in respective class.
+
+Shallow Copy:
+	
+	- The default version of clone() method is shallow copy.
+	- The shallow copy of an object will have exact copy of all the fields.
+	- If originial object has any reference to another object as fields, then only reference of those objects are copied on the clone object.
+	- Thus, Deep copy is 100% joint and dependent of each other.
+	- Thus, any changes happen original object will make affect to copied object and vice-versa.
+	
+Deep Copy:
+
+	- Deep Copy of an object will have exact copy of all the fields,
+	- but, If originial object has any reference to another object as fields, then copy of those objects are also created using clone() method on them.
+	- Thus, Deep copy is 100% disjoint or independent of each other.
+
+------------------------------------------------------------------------------------
+
+Singleton Class: 
+
+	- A singleton class can have only one object of that class at a time.
+	- After the first time, if we try to instantiate the Singleton class,
+	the new variable also points to the first instance of the class created.
+	
+	Ways to create a singleton:
+	
+	- Make a constructor private.
+	- Create a static method that has return type as Object of the same class.
+	
+Case-Study:
+
+	In multi-threading environment, two instances are trying to call getInstance.
+	But, As its singleon class only one instance can be creted.
+	
+	To make the creation of Singleton object as thread-safe, the method getInstance() should be synchronized. So that the method gets executed only one thread at a time.
+	
+----------------------------------------------------------------------------
+
+Inner Classes:
+
+	- a non-static nested class
+	- This class can have access to members of the outer class.
+	- If the class is inner or nested, inside the another class, You must instantiate or create the object of outer class first.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
