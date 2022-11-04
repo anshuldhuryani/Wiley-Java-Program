@@ -1,0 +1,115 @@
+
+MultiThreading:
+
+	MultiThreading is a process to create multiple threads at the same time without dependency of other threads.
+	
+	- A process to create multiple threads
+	- At the same time
+	- Without dependency
+	
+Synchronous vs. Asychronous Programming Approach: (Non-Blocking)
+
+	One or more request can be placed one after the another.
+	Each request indendendently gets allocated with	 thread.
+	Once your request gets processed, you will your desired output.
+	
+	Note: Not sure, which request gets processed first, that depenens upon request time and resources required.
+	
+Synchronous Approach (Blocking):
+
+	Request gets happen one after the another. Until the previous request is not completed, next has to wait. (one at a time).
+	
+What is Thread:
+
+	Thread is a pre-defined class which is available in java.lang package.
+	 a unit of CPU and it is acutally known for independent execution.
+	 
+To create your thrad in Java:
+
+	1. By extending Thread Class
+	2. By implementing Runnable Interface.
+	
+------------------------------------------------------
+
+Significant difference between extending Thread class and Implementing runnable interface:
+
+	- When we extend Thread class, we can't extend any other class.
+	- Thus, multiple inheritance can't be achieved with this approach.
+	
+------------------------------------------------------
+
+Thread Life Cycle:
+
+	1. New Thread (NewBorn Thread)
+	2. Runnable
+	3. Running
+	5. Blocked (Non-Runnable)
+	4. Terminated (Dead)
+
+------------------------------------------------------
+
+User Thread vs. Daemon Thread:
+
+Daemon Thread are known as background threads.
+They provide service to other user defined threads.
+
+If you want to make, any thread as deamon thred,
+you can use setDaemon method for same.
+
+---------------------------------------------------------
+
+Thread Priority:
+
+Priority means numbers of resources allocated to a particular thread.
+JVM assigns the priority. The priority range lies between 1 and 10.
+
+- Thread.MIN_PRIORITY (1)
+- Thread.NORM_PRIORITY(5)
+- Thread.MAx_PRIORITY (10)
+
+--------------------------------------------------------------
+
+Bank Class:
+	Intial Balance
+	Withdrwal method with parameters i.e. name, withdrwal amount (Withdraw money if total amount greater or equal to the money request for withdrawal)
+	(Condition/Other Condition) After withdrwal make a sleep of 1 second.
+	deposit method with parameters i.e. name, deposit amount.
+	Make a threa sleep for 1 second after each deposit)
+	
+ThreadWithdrawal class that will extend the thread class,
+invoke withdrawal method from this class.
+(Bank, name, amount)
+
+ThreadDeposit that will extend the thread class,
+invoke deposit method from this class.
+(Bank, name, amount)
+
+Declaring an object of Bank class and passing the object along with other parameters to the // ThreadWithdrawal and ThreadDeposit class. This will be required to call withdrawn and deposit methods from those class
+
+---------------------------------------------------------
+
+
+Java Streams API:
+
+	- This concept is introduced in Java 8.
+	- This comes with package java.util.Stream
+	- This Stream API has collection of classes, interfaces and enums to allow the function-style operations.
+	
+-------------------------------------------------------------------
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+	
+	
