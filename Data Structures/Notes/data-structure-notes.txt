@@ -1,0 +1,39 @@
+
+ O(1) - Constant Time Algorithm
+ The time is constant regardless the input size.
+ This is one of the fastest notation
+ 
+ ----------------------------------------
+ 
+ O(n) - Linear Time Algorithm
+ This grows linearly with input size.
+ As n gets increases, execution time also increases.
+ 
+ ----------------------------------------
+ 
+ O(n*2) - Quadratic Time Algorithm
+ Hint: (Nested Loop) - Quadratic
+ This represents whose complexity is directly propotional to the square of the size. Adding more nested iteration through input size will increase leads to O(n^3) or so on. but will come under Quadratic Time Algorithm.
+ 
+ ----------------------------------------
+ 
+ O(log n) - Logarithmic Time Algorithm
+ Hint: (Half of the input size) - Logarithmic
+ It grows in propotion to the logarithmic size.
+ Example, binary search algorithm
+ 
+ -----------------------------------------
+ 
+ O(2^n) - Exponential Time Algorithm
+ This notation comes whose performance doubles for every element in input.
+ Example, Recursion
+ 
+ -----------------------------------------
+ 
+ Time Complexity for Array Operations:
+			Best-Case	Worst-Case
+ Lookup - 	O(1)		O(n)
+ Insert - 	O(1)		O(n)
+ Delete - 	O(1)		O(n)
+ 
+ -----------------------------------------
